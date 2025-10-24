@@ -1,0 +1,8 @@
+CREATE TABLE users(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    surname VARCHAR(100),
+    name VARCHAR(100),
+    dob DATE, 
+    email VARCHAR(100) NOT NULL,
+    tel VARCHAR(15) NOT NULL
+);
