@@ -83,16 +83,16 @@ public class UserController {
             return "users/edit";
         }
         userService.update(id, userDto);
-        redirectAttributes.addFlashAttribute("successMessage", "articolo modificato con successo");
+        redirectAttributes.addFlashAttribute("successMessage", "Utente modificato con successo");
         return "redirect:/users";
 
     }
 
     @GetMapping("/delete/{id}")
-    public String deleteUser(@PathVariable("id") Long id, Model viewModel, RedirectAttributes redirectAttributes) {
+    public String deleteUser(@PathVariable("id") Long id, RedirectAttributes redirectAttributes) {
         userService.delete(id);
-        redirectAttributes.addFlashAttribute("successMessage", "Articolo cancellato con successo");
-        return "redirect:/users/users";
+        redirectAttributes.addFlashAttribute("successMessage", "Utente cancellato con successo");
+        return "redirect:/users";
     }
 
 }

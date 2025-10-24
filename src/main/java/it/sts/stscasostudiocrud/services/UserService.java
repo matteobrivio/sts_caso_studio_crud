@@ -24,7 +24,6 @@ public class UserService implements CrudService<UserDto, Long> {
 
     @Override
     public UserDto create(UserDto dto) {
-        System.out.println("💾 Creo utente: " + dto.getName() + " " + dto.getSurname());
         User user = new User();
         user.setName(dto.getName());
         user.setSurname(dto.getSurname());
@@ -33,7 +32,7 @@ public class UserService implements CrudService<UserDto, Long> {
         user.setDob(dto.getDob());
 
         user = userRepository.save(user);
-        System.out.println("✅ Salvato utente con ID: " + user.getId());
+
         return dto;
 
     }
@@ -79,7 +78,7 @@ public class UserService implements CrudService<UserDto, Long> {
         if (userRepository.existsById(key)) {
             userRepository.deleteById(key);
         } else {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Utente non trovato");
         }
     }
 
