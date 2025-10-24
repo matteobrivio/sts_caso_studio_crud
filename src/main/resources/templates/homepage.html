@@ -1,0 +1,188 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{index :: head}"></head>
+
+<body>
+    <navbar th:insert="~{index :: navbar}"></navbar>
+    <!-- hero section -->
+    <header class="container-fluid ">
+        <div class="row">
+            <div class="col-12 p-0 hero">
+                <div class="hero-content">
+                    <img th:src="@{/images/logo-60mm-STS-senza-scritte.png}" class="hero-logo">
+                    <h1 class="textRed">Security Technology Solution</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section chi siamo -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="  col text-center">
+
+                <h2 class="textRed size"> Sistemi di sicurezza per passione</h2>
+            </div>
+        </div>
+        <article class="row mt-5">
+            <div class="col-12 col-md-5"><img th:src="@{/images/sts-chi-siamo-cut.png}"
+                    class="maxwidht maxHeight borderBotRed">
+            </div>
+            <div class="d-none col-md-1"></div>
+            <div class="col-12 col-md-6 ">
+                <p>Siamo STS Italia, una società di servizi che si occupa di fornire ai clienti impianti e
+                    sistemi di Sicurezza. Da più di trentacinque anni, noi del gruppo STS Italia operiamo
+                    nel settore della Sicurezza e dell’impiantistica Speciale tutelando imprese, privati,
+                    associazioni e pubblica amministrazione. Il know-how acquisito ed implementato negli
+                    anni ha permesso di affermarci sul mercato odierno come leader del settore: ogni
+                    impianto viene realizzato a partire dalle singole esigenze del cliente, rispettando il
+                    continuo cambiamento tecnologico e normativo.</p>
+            </div>
+        </article>
+        <article class="row mt-5">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <p class="text-end">Mettiamo a disposizione la Nostra esperienza al fine di consigliare e condividere
+                    con il cliente le
+                    scelte migliori, offrendo soluzioni pensate e realizzate su misura a partire dalla richiesta di chi
+                    ci sceglie.
+                    Forniamo servizi di consulenza, progettazione, installazione, manutenzione, assistenza e pronto
+                    intervento su sistemi di rilevazione incendio (IRAI), sistemi antintrusione, sistemi di evacuazione
+                    fumi e calore (EFC), videosorveglianza, controllo accessi, control room e lettura targhe e ispezioni
+                    aeree con droni.</p>
+            </div>
+            <div class="d-none col-md-1"></div>
+
+            <div class="col-12 col-md-5 order-1 order-md-2"><img th:src="@{/images/sts-italia-installazione.jpg}"
+                    class="maxwidht maxHeight borderBotRed"></div>
+        </article>
+        <article class="row mt-5">
+            <div class="col-12 col-md-5 "><img th:src="@{/images/sts-chi-siamo-cut2.jpg}"
+                    class="maxwidht maxHeight borderBotRed">
+            </div>
+            <div class="d-none col-md-1"></div>
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <p>L’obiettivo è quello di mettere in Sicurezza i nostri clienti utilizzando soluzioni
+                    tecnologiche ed
+                    innovative. Crediamo fortemente nella centralizzazione dei diversi sistemi di Sicurezza, per questo
+                    motivo siamo unici distributori nazionali del software di supervisione centralizzato PSM. (creare un
+                    link per spiegare cos’è uno PSIM)
+
+                    Per la tua Sicurezza, affidati alla nostra esperienza: non vendiamo prodotti ma offriamo servizi e
+                    soluzioni affidabili e personalizzate costruendo un rapporto concreto e costante.</p>
+            </div>
+        </article>
+    </section>
+    <!-- main servizi -->
+    <main class="container-fluid mt-5">
+        <div class="row vh100 productBG">
+            <div class="col-12 ">
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <h2 class="size textWhite">Le nostre soluzioni</h2>
+                    </div>
+                </div>
+
+                <div class="row  mt-4">
+                    <div class="col-1"></div>
+                    <div class="col-11 pe-0">
+                        <h3 class="red mb-1 vh8 d-flex align-items-center ps-3 textWhite">Rivelazione Incendio</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-1"></div>
+                    <div class="col-11 pe-0">
+                        <h3 class="red vh8 d-flex align-items-center ps-3 textWhite">Antintrusione</h3>
+                    </div>
+                </div>
+                <div class="row  mt-4">
+                    <div class="col-2"></div>
+                    <div class="col-10 pe-0">
+                        <h3 class="green mb-1 vh8 d-flex align-items-center ps-3 textWhite">Controllo accessi</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10 pe-0">
+                        <h3 class="green vh8 d-flex align-items-center ps-3 textWhite">Lettura targhe</h3>
+                    </div>
+                </div>
+                <div class="row  mt-4">
+                    <div class="col-3"></div>
+                    <div class="col-9 pe-0">
+                        <h3 class="blue mb-1 vh8 d-flex align-items-center ps-3 textWhite">Control Room</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-9 pe-0">
+                        <h3 class="blue vh8 d-flex align-items-center ps-3 textWhite">Antincendio</h3>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="d-none col-md-4"></div>
+                    <div class="col-12 col-md-8 p-0 ">
+                        <button class="maxwidht ">
+                            <a href="" class="cleanA">
+                                <h3 class="mb-0 textWhite vh8 d-flex align-items-center ps-3">
+                                    Contattaci
+                                    per
+                                    scoprire la più
+                                    adeguata a te!</h3>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <!-- <div class="container-fluid mt-5">
+        <div class="row whiteBG">
+            <div class="col-12">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <div class="col-3 me-5 col-md-3 redB py-5 text-center">
+                        <h5><a href="" class="cleanA textRed"><i class="fa-solid fa-location-dot"></i> </a></h5>
+                        <h5 class="textRed">Trovaci</h5>
+                    </div>
+                    <div class="col-1 d-md-none"></div>
+                    <div class="col-3 col-md-3 greenB py-5 text-center">
+                        <h5><a href="" class="cleanA textGreen"><i class="fa-solid fa-phone"></i> </a></h5>
+                        <h5 class="textGreen">Telefono </h5>
+                    </div>
+                    <div class="col-1 d-md-none"></div>
+                    <div class="col-3 col-md-3 blueB ms-5 py-5 text-center">
+                        <h5><a href=" " class="cleanA textBlue"><i class="fa-solid fa-envelope"></i> </a></h5>
+                        <h5 class="textBlue">Email</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid mt-5">
+        <div class="d-flex justify-content-between text-center flex-wrap gap-2">
+            <div class="flex-fill redB py-5 mx-1">
+                <h5><a href="" class="cleanA textRed"><i class="fa-solid fa-location-dot"></i></a></h5>
+                <h5 class="textRed">Trovaci</h5>
+            </div>
+            <div class="flex-fill greenB py-5 mx-1">
+                <h5><a href="" class="cleanA textGreen"><i class="fa-solid fa-phone"></i></a></h5>
+                <h5 class="textGreen">Telefono</h5>
+            </div>
+            <div class="flex-fill blueB py-5 mx-1">
+                <h5><a href=" " class="cleanA textBlue"><i class="fa-solid fa-envelope"></i></a></h5>
+                <h5 class="textBlue">Email</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer th:insert=" ~{index :: footer}"></footer>
+    <script th:insert="~{index :: bootStrap}"></script>
+    <script th:src="@{/js/app.js}"></script>
+
+</body>

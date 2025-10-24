@@ -1,0 +1,89 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" />
+
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title th:text="${title}">STS</title>
+</head>
+
+<body>
+    <nav th:fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" th:href="@{/}">
+                <img th:src="@{/images/logo-60mm-STS-senza-scritte.png}" alt="Logo" style="height:12vh;">
+            </a>
+
+            <!-- MENU COLLAPSIBLE -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto" style="gap: 4rem;">
+                    <a class="nav-link">
+                        <h4 class="textBlack">Prodotti</h4>
+                    </a>
+                    <a class="nav-link" th:href="@{/users}">
+                        <h4 class="textBlack">Utenti</h4>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <h4 class="textBlack">Contatti</h4>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+    <!-- footer -->
+    <footer th:fragment="footer" class="footer-classic mt-5" role="contentinfo">
+        <div class="container-fluid">
+            <div class="row textWhite  text-center d-flex justify-content-center align-items-center ">
+                <div class=" col-6 col-md-4 mt-3">
+                    <p><a href="" class="cleanA textWhite"><i class="fa-brands fa-instagram mt-3"></i> Instagram</a></p>
+                    <p><a href="" class="cleanA textWhite"><i class="fa-brands fa-linkedin"> </i> Linkedin</a></p>
+                    <p><a href="" class="cleanA textWhite"><i class="fa-brands fa-facebook"> </i> Facebook</a></p>
+                </div>
+
+                <div class="col-6 col-md-4 mt-3">
+                    <p><a href="" class="cleanA textWhite">Privacy Policy</a></p>
+                    <p><a href="" class="cleanA textWhite">Piattaforma Whistleblowing</a></p>
+                    <p><a href="" class="cleanA textWhite">Cookies Policy</a></p>
+
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <p>STS Italia s.r.l. © 2025 Tutti i diritti sono riservati. Sede Legale in Via Dell’Edilizia, 110 –
+                        36100 Vicenza (VI) | C.F e P.I 00865310247 | REA di Vicenza: VI – 175684</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script th:fragment="bootStrap" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
