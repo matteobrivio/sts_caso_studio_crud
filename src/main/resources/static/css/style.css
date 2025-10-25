@@ -180,11 +180,12 @@ button {
 
 .cleanA {
     text-transform: none !important;
+    text-decoration: none !important;
 }
 
 .cleanA:hover {
     text-decoration: underline !important;
-    color: black;
+    color: red;
 }
 
 

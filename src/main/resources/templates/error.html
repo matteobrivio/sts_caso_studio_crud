@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="it">
+
+<head th:insert="~{index :: head}">
+    <title>Errore</title>
+</head>
+
+<body>
+    <navbar th:insert="~{index :: navbar}"></navbar>
+
+    <div class="container mt-5">
+        <div class="alert alert-danger text-center">
+            <h2>Si è verificato un errore!</h2>
+            <p>Codice errore: <span th:text="${statusCode}">?</span></p>
+            <p>Messaggio: <span th:text="${errorMessage}">Nessun dettaglio disponibile</span></p>
+            <a th:href="@{/}" class="btn btn-primary mt-3">Torna alla homepage</a>
+        </div>
+    </div>
+
+    <footer th:insert="~{index :: footer}"></footer>
+</body>
+
+</html>
