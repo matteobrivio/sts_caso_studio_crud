@@ -37,13 +37,13 @@
             <!-- MENU COLLAPSIBLE -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto" style="gap: 4rem;">
-                    <a class="nav-link">
+                    <a class="nav-link" href="#prodotti">
                         <h4 class="textBlack">Prodotti</h4>
                     </a>
                     <a class="nav-link" th:href="@{/users}">
                         <h4 class="textBlack">Utenti</h4>
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#footer">
                         <h4 class="textBlack">Contatti</h4>
                     </a>
                 </div>
@@ -59,7 +59,7 @@
         </div>
     </nav>
     <!-- footer -->
-    <footer th:fragment="footer" class="footer-classic mt-5" role="contentinfo">
+    <footer id="footer" th:fragment="footer" class="footer-classic mt-5" role="contentinfo">
         <div class="container-fluid">
             <div class="row textWhite  text-center d-flex justify-content-center align-items-center ">
                 <div class=" col-6 col-md-4 mt-3">

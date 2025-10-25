@@ -1,6 +1,98 @@
+/* varie */
+
 body {
     padding-top: 14vh;
 }
+
+/* colors */
+.whiteBG {
+    background-color: white;
+}
+
+.red {
+    background-color: rgb(254, 0, 2);
+}
+
+.green {
+    background-color: rgb(1, 165, 42);
+}
+
+.blue {
+
+    background-color: rgb(0, 0, 126);
+}
+
+.redB {
+    border: 5px solid rgb(254, 0, 2);
+}
+
+.blueB {
+    border: 5px solid rgb(0, 0, 126);
+
+}
+
+.greenB {
+    border: 5px solid rgb(1, 165, 42);
+
+}
+
+.textWhite {
+    color: white;
+}
+
+.textBlue {
+    color: rgb(0, 0, 126);
+}
+
+.textGreen {
+    color: rgb(1, 165, 42);
+}
+
+.textRed {
+    color: rgb(254, 0, 2);
+}
+
+.textblack {
+    color: black;
+}
+
+/* img */
+.fitImage {
+    width: 100%;
+    height: 86vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* height */
+.vh8 {
+    height: 80%;
+}
+
+.vh6 {
+    height: 6vh;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+
+.half {
+    height: 25%;
+}
+
+/* width */
+
+.maxwidht {
+    width: 100%;
+}
+
+.maxHeight {
+    height: 100%;
+}
+
+/* navbar */
 
 .navbar {
     padding-top: 0;
@@ -52,25 +144,20 @@ body {
 
 .hero-logo {
     width: 500px;
-    /* o la misura che preferisci */
     height: auto;
-    /* mantiene le proporzioni */
     max-width: 80%;
-    /* evita che si allarghi troppo su schermi piccoli */
+}
+
+.productBG {
+    background-image: url("/images/darkHeroSection.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
-/* img */
-.fitImage {
-    width: 100%;
-    /* riempie tutta la larghezza del contenitore */
-    height: 86vh;
-    /* riempie tutta l’altezza del contenitore */
-    object-fit: cover;
-    /* scala l’immagine per coprire il contenitore senza deformarla */
-    object-position: center;
-    /* centra l’immagine */
-}
+
 
 /* buttons */
 button {
@@ -92,38 +179,14 @@ button {
 }
 
 .cleanA {
-    text-decoration: none !important;
     text-transform: none !important;
 }
 
-/* colori */
-
-.red {
-    background-color: rgb(254, 0, 2);
+.cleanA:hover {
+    text-decoration: underline !important;
+    color: black;
 }
 
-.green {
-    background-color: rgb(1, 165, 42);
-}
-
-.blue {
-
-    background-color: rgb(0, 0, 126);
-}
-
-.redB {
-    border: 5px solid rgb(254, 0, 2);
-}
-
-.blueB {
-    border: 5px solid rgb(0, 0, 126);
-
-}
-
-.greenB {
-    border: 5px solid rgb(1, 165, 42);
-
-}
 
 /* font */
 * {
@@ -167,72 +230,12 @@ h5 {
     font-size: 3rem;
 }
 
-.textWhite {
-    color: white;
-}
 
-.textBlue {
-    color: rgb(0, 0, 126);
-}
 
-.textGreen {
-    color: rgb(1, 165, 42);
-}
 
-.textRed {
-    color: rgb(254, 0, 2);
-}
 
-.textblack {
-    color: black;
-}
 
-/* height */
-.vh8 {
-    height: 80%;
-}
 
-.vh6 {
-    height: 6vh;
-}
-
-.vh100 {
-    height: 100vh;
-}
-
-/* .vh30 {
-    height: 30vh;
-} */
-
-.half {
-    height: 25%;
-}
-
-/* width */
-
-.maxwidht {
-    width: 100%;
-}
-
-.maxHeight {
-    height: 100%;
-}
-
-.productBG {
-    background-image: url("/images/darkHeroSection.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.whiteBG {
-    background-color: white;
-}
-
-/* .vh30 .col-4 {
-    width: 30vw;
-} */
 
 .borderBotRed {
     border-bottom: 5px solid rgb(254, 0, 2);
@@ -251,11 +254,7 @@ footer a:hover {
 }
 
 
-
-html,
-body {
-    overflow-x: hidden;
-}
+/* media query */
 
 @media (max-width: 768px) {
     .vh30 {
@@ -281,7 +280,9 @@ body {
         margin: 0px !important;
     }
 
-    /* body {
-        padding-bottom: 50vh;
-    } */
+}
+
+html,
+body {
+    overflow-x: hidden;
 }

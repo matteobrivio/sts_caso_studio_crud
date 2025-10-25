@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PublicController {
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("title", "homepage");
+        model.addAttribute("title", "Homepage");
         return "homepage";
     }
 

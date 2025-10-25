@@ -26,7 +26,7 @@ public class UserController {
 
     @GetMapping
     public String userIndex(Model viewModel) {
-        viewModel.addAttribute("title", "tutti gli utenti");
+        viewModel.addAttribute("title", "Tutti gli utenti");
         List<UserDto> users = userService.readAll();
         viewModel.addAttribute("users", users);
         return "/users/users";
