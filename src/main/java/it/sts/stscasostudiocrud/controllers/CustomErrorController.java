@@ -18,6 +18,6 @@ public class CustomErrorController implements ErrorController {
         model.addAttribute("statusCode", statusCode);
         model.addAttribute("errorMessage", exception == null ? "Nessun dettaglio disponibile" : exception.getMessage());
 
-        return "error"; // nome del template Thymeleaf
+        return "error";
     }
 }

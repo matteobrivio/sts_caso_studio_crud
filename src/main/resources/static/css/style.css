@@ -185,7 +185,12 @@ button {
 
 .cleanA:hover {
     text-decoration: underline !important;
-    color: red;
+    color: red
+}
+
+.detailA:hover {
+    text-decoration: underline !important;
+    color: white
 }
 
 
